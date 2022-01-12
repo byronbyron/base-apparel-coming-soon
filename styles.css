@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+@import url('normalize.css');
+
+:root {
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--dark-grayish-red);
+}
+
+h1, p {
+    margin-top: 0;
+}
+
+p {
+    font-size: 0.875rem;
+    color: var(--desaturated-red);
+}
+
+.container {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.header {
+    min-height: 5.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+    width: 100px;
+    height: auto;
+}
+
+.hero {
+    display: block;
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+}
+
+.page-body {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.05;
+    text-transform: uppercase;
+    letter-spacing: 0.275em;
+    margin-bottom: 1.125rem;
+}
+
+.page-title span {
+    font-weight: 300;
+    color: var(--desaturated-red);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

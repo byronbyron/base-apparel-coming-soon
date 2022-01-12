@@ -7,21 +7,31 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <meta name="description" content="Base Apparel coming soon page">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="header container">
+    <img src="images/logo.svg" alt="Base Apparel" width="158" height="33" class="logo">
+  </header>
 
-  We're coming soon
+  <main class="container">
+    <img src="images/hero-mobile.jpg" alt="" class="hero">
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <div class="page-body">
+      <h1 class="page-title"><span>We're</span> coming soon</h1>
 
-  Email Address
+      <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+
+      <form>
+        <div class="form-group">
+          <label for="email" class="sr-only">Email</label>
+          <input type="text" name="email" id="email" placeholder="Email Address">
+        </div>
+      </form>
+    </div>
+  </main>
   
   <footer>
     <p class="attribution">
