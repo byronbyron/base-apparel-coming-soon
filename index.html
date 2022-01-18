@@ -12,12 +12,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header container">
-    <img src="images/logo.svg" alt="Base Apparel" width="158" height="33" class="logo">
-  </header>
-
   <main class="container">
-    <img src="images/hero-mobile.jpg" alt="" class="hero">
+    <div class="logo">
+      <img src="images/logo.svg" alt="Base Apparel" width="158" height="33">
+    </div>
+
+    <picture>
+        <source srcset="images/hero-desktop.jpg"
+                media="(min-width: 992px)">
+        <img src="images/hero-mobile.jpg" alt="" class="hero">
+    </picture>
 
     <div class="page-body">
       <h1 class="page-title"><span>We're</span> coming soon</h1>
