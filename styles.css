@@ -138,6 +138,13 @@ h1, p {
     right: 0;
     box-shadow: 0 0.75rem 1.5rem -0.25rem hsl(0deg 36% 70% / 60%);
     cursor: pointer;
+    transition: opacity 0.15s, box-shadow 0.15s;
+}
+
+.form-button:hover,
+.form-button:focus {
+    opacity: 0.6;
+    box-shadow: 0 0.75rem 1.75rem -0.25rem hsl(0deg 36% 50% / 100%);
 }
 
 .attribution {
